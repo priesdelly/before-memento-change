@@ -43,7 +43,6 @@ public class FoobarFile {
     }
 
     public void save() {
-        //TODO Save the file to disk
         try (var fileWriter = new FileWriter(this.fileObj.toString());
              var bufferedWriter = new BufferedWriter(fileWriter)) {
             bufferedWriter.write(this.content);
